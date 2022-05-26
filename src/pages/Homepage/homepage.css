@@ -1,0 +1,9 @@
+main {
+  height: 784px;
+  background: linear-gradient(
+    180deg,
+    #e5fffa 0%,
+    rgba(229, 255, 249, 0.262661) 83.7%,
+    rgba(229, 255, 249, 0) 100%
+  );
+}

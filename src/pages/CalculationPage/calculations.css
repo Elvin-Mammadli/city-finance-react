@@ -1,0 +1,103 @@
+.calculations {
+  height: 457px;
+  padding: 50px 10%;
+  background-color: #f0fffc;
+  display: flex;
+  gap: 22px;
+}
+
+.calculations-left {
+  padding: 24px 32px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calculations-left,
+.calculations-right {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.subbox p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #616161;
+  margin-bottom: 4px;
+  line-height: 24px;
+}
+
+.subbox h6 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #424242;
+  margin-bottom: 20px;
+  line-height: 28px;
+}
+
+.slider-container input {
+  width: 100%;
+}
+
+.slider-container > .amounts {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #616161;
+}
+
+.calculations-left > .payment-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calculations-right {
+  padding: 42px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.calculations-right input[type="text"] {
+  width: 100%;
+  outline: none;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.calculations-right select {
+  outline: none;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.fourth-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.fourth-row p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #616161;
+}
+
+/* ::placeholder {
+  color: rgba(0, 0, 0, 0.54);
+} */

@@ -1,0 +1,39 @@
+.services-card {
+  width: 274px;
+  height: 348px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.services-card-top {
+  height: 47.5%;
+  overflow: hidden;
+}
+
+.services-card-bottom {
+  height: 52.5%;
+  padding: 28px 16px 24px;
+  background-color: #fff;
+}
+
+.services-card-bottom > h6 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+
+.services-card-bottom > .text-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.text-left > span:first-of-type {
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.text-right > span:first-of-type {
+  color: rgba(0, 0, 0, 0.35);
+}

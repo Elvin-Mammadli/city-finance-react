@@ -1,0 +1,42 @@
+.heading {
+  height: 698px;
+  display: flex;
+  padding: 0 10%;
+  position: relative;
+}
+
+.heading-left {
+  width: 42vw;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  left: 0;
+}
+
+.heading-left-textbox {
+  width: 32.5vw;
+}
+
+.heading-left-textbox h1 {
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+
+.heading-left-textbox p {
+  margin-bottom: 40px;
+  width: 90%;
+  line-height: 32px;
+  color: #616161;
+}
+
+.heading-right {
+  width: 68vw;
+  height: 100%;
+  background-image: url('../../assets/Girl-suprised.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+}

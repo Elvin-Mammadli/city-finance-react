@@ -1,0 +1,28 @@
+nav {
+	padding: 25px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigations > ul {
+  display: flex;
+}
+
+.navigations li {
+	margin-right: 30px;
+}
+
+.navigations img {
+	margin-right: 32px;
+}
+
+.navigations a {
+	color: #424242;
+}
+

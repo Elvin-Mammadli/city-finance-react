@@ -1,0 +1,20 @@
+.services {
+  padding: 50px 10% 30px;
+  background-color: #f5fffc;
+}
+
+.services h2 {
+  line-height: 60px;
+}
+
+.services-cards-box {
+  display: flex;
+}
+
+.owl-stage-outer {
+  height: 350px;
+}
+
+.owl-dots {
+  margin-top: 50px !important;
+}

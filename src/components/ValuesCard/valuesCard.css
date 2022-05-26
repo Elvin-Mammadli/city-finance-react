@@ -1,0 +1,12 @@
+.values-card {
+    width: 25.5%;
+}
+
+.values-card > img {
+    margin: 24px 0 16px 0;
+}
+
+.values-card > h3 {
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}

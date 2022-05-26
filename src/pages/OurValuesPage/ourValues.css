@@ -1,0 +1,11 @@
+.our-values {
+  width: 100%;
+  height: 354px;
+  padding: 5% 10% 4%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-values h2 {
+  font-size: 2.25rem;
+}

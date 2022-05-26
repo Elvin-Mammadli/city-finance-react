@@ -1,0 +1,11 @@
+.useful-info {
+  height: 503px;
+  padding: 50px 10%;
+  border: 1px solid red;
+}
+
+.useful-info > h2 {
+    font-size: 2.25rem;
+    line-height: 60px;
+    margin-bottom: 25px;
+  }
