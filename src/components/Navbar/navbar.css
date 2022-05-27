@@ -1,5 +1,5 @@
 nav {
-	padding: 25px 10%;
+  padding: 25px 10%;
   display: flex;
   justify-content: space-between;
 }
@@ -15,14 +15,52 @@ nav {
 }
 
 .navigations li {
-	margin-right: 30px;
+  margin-right: 30px;
 }
 
 .navigations img {
-	margin-right: 32px;
+  margin-right: 32px;
 }
 
 .navigations a {
-	color: #424242;
+  color: #424242;
 }
 
+.burger {
+  display: none;
+}
+
+.burger > div {
+  width: 30px;
+  height: 2px;
+  background-color: rgb(39, 100, 107);
+  margin: 6px 0;
+}
+
+@media only screen and (max-width: 350px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .navigations {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  nav {
+    padding: 20px 3%;
+  }
+}

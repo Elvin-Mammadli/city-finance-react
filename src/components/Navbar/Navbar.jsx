@@ -20,7 +20,7 @@ const Navbar = () => {
       </div>
       <div className="navigations">
         <ul>
-          {menus.map(menu => (
+          {menus.map((menu) => (
             <li key={menu.id}>
               <a href={`#${menu.name}`}>{menu.name}</a>
             </li>
@@ -30,6 +30,11 @@ const Navbar = () => {
           <img src={SearchIcon} alt="Search" />
         </a>
         <Button text="Kredit sifarişi" />
+      </div>
+      <div className="burger">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </nav>
   );
