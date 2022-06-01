@@ -13,13 +13,22 @@ li {
   list-style: none;
 }
 
+h2 {
+  font-size: 2.25rem;
+}
+
 :root {
   /* variables */
   --primary-color: #00a5b4;
   --secondary-color: #cefbff;
+  --section-color: #F0FFFC;
   --white: #ffffff;
   --grey-1: #bdbdbd;
   --grey-2: #616161;
   --grey-3: #424242;
   --grey-4: #212121;
+}
+
+div.container {
+  padding: 0 10vw;
 }

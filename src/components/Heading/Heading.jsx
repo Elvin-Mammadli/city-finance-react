@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 
 const Heading = () => {
   return (
-    <div className="heading">
+    <section className="heading">
       <div className="heading-left">
         <div className="heading-left-textbox">
           <h1>
@@ -16,7 +16,7 @@ const Heading = () => {
       </div>
       <div className="heading-right">
       </div>
-    </div>
+    </section>
   );
 };
 

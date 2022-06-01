@@ -27,11 +27,18 @@ const cardDatas = [
 
 const OurValues = () => {
   return (
-    <div className="our-values">
-      {cardDatas.map((card) => (
-        <ValuesCard key={card.id} icon={card.icon} heading={card.heading} text={card.text}/>
-      ))}
-    </div>
+    <section className="our-values">
+      <div className="our-values-box container">
+        {cardDatas.map((card) => (
+          <ValuesCard
+            key={card.id}
+            icon={card.icon}
+            heading={card.heading}
+            text={card.text}
+          />
+        ))}
+      </div>
+    </section>
   );
 };
 

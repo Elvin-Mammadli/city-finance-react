@@ -13,29 +13,29 @@ const menus = [
 const Navbar = () => {
   return (
     <nav>
-      <div className="logo">
-        <a href="#home">
-          <img src={Logo} alt="Logo" />
-        </a>
-      </div>
-      <div className="navigations">
-        <ul>
-          {menus.map((menu) => (
-            <li key={menu.id}>
-              <a href={`#${menu.name}`}>{menu.name}</a>
-            </li>
-          ))}
-        </ul>
-        <a href="search">
-          <img src={SearchIcon} alt="Search" />
-        </a>
-        <Button text="Kredit sifarişi" />
-      </div>
-      <div className="burger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+        <div className="navigations-box container">
+          <a href="#home">
+            <img src={Logo} alt="Logo" />
+          </a>
+          <div className="navigations">
+            <ul>
+              {menus.map((menu) => (
+                <li key={menu.id}>
+                  <a href={`#${menu.name}`}>{menu.name}</a>
+                </li>
+              ))}
+            </ul>
+            <a href="search">
+              <img src={SearchIcon} alt="Search" />
+            </a>
+            <Button text="Kredit sifarişi" />
+          </div>
+          <div className="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
     </nav>
   );
 };

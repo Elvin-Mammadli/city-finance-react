@@ -1,6 +1,5 @@
 .campaigns {
-  height: 631px;
-  padding: 50px 10% 50px;
+  padding: 50px 0;
 }
 
 .campaigns h2 {
@@ -15,7 +14,8 @@
   align-items: center;
 }
 
-.campaigns > .campaigns-cards {
+.campaigns .campaigns-cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }

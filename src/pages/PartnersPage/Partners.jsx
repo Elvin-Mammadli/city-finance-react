@@ -19,20 +19,22 @@ const partnerLogos = [
 
 const Partners = () => {
   return (
-    <div className="partners">
-      <div className="partners-heading">
-        <h2>Onlar bizə etibar edir</h2>
-        <a href="#hamisi">
-          <img src={AllButton} alt="Hamisi" />
-        </a>
-      </div>
+    <section className="partners">
+      <div className="partners-box container">
+        <div className="partners-heading">
+          <h2>Onlar bizə etibar edir</h2>
+          <a href="#hamisi">
+            <img src={AllButton} alt="Hamisi" />
+          </a>
+        </div>
 
-      <div class="partners-logos">
-        {partnerLogos.map((logo, index) => (
-          <PartnerBox image={logo.image} />
-        ))}
+        <div className="partners-logos">
+          {partnerLogos.map((logo, index) => (
+            <PartnerBox key={index} image={logo.image} />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

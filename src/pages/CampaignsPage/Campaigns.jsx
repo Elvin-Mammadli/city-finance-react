@@ -25,20 +25,27 @@ const campaigns = [
 
 const Campaigns = () => {
   return (
-    <div className="campaigns">
-      <div className="heading-row">
-        <h2>Kampaniyalar</h2>
-        <a href="#hamisi">
-          <img src={AllButton} alt="Hamisi" />
-        </a>
-      </div>
+    <section className="campaigns">
+      <div className="campaigns-box container">
+        <div className="heading-row">
+          <h2>Kampaniyalar</h2>
+          <a href="#hamisi">
+            <img src={AllButton} alt="Hamisi" />
+          </a>
+        </div>
 
-      <div className="campaigns-cards">
-        {campaigns.map(({ image, header, period }) => (
-          <CampaignsCard image={image} header={header} period={period} />
-        ))}
+        <div className="campaigns-cards">
+          {campaigns.map(({ image, header, period }, index) => (
+            <CampaignsCard
+              key={index}
+              image={image}
+              header={header}
+              period={period}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

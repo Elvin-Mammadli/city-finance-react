@@ -1,0 +1,41 @@
+footer {
+  padding: 50px 0;
+  background-color: var(--grey-4);
+}
+
+footer h4 {
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+footer p,
+a {
+  color: var(--grey-1);
+}
+
+footer li {
+  margin-bottom: 15px;
+}
+
+.footer-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-column {
+    justify-content: space-between;
+}
+
+.footer-logo-column img {
+    margin-bottom: 16px;
+}
+
+.socials {
+    display: flex;
+    gap: 15px;
+}

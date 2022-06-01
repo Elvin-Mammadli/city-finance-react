@@ -1,7 +1,11 @@
 nav {
-  padding: 25px 10%;
+  padding: 25px 0;
+}
+
+.navigations-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navigations {

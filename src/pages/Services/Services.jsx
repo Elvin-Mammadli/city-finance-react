@@ -13,7 +13,7 @@ const servicesCard = [
     id: 1,
     image: card1,
     heading: "Avtokredit",
-    period: "1-3 il"
+    period: "1-3 il",
   },
   {
     id: 2,
@@ -34,47 +34,48 @@ const servicesCard = [
     period: "1-3 il",
   },
   {
-    id: 1,
+    id: 5,
     image: card1,
     heading: "Avtokredit",
-    period: "1-3 il"
+    period: "1-3 il",
   },
   {
-    id: 2,
+    id: 6,
     image: card2,
     heading: "Mikrokredit",
     period: "1-3 il",
   },
   {
-    id: 3,
+    id: 7,
     image: card3,
     heading: "İstehlak krediti",
     period: "1-3 il",
   },
   {
-    id: 4,
+    id: 8,
     image: card4,
     heading: "Lombard krediti",
     period: "1-3 il",
-  }
+  },
 ];
 
 const Services = () => {
   return (
-    <div className="services">
-      <h2>Xidmətlərimiz</h2>
-
-      <OwlCarousel className="owl-theme" items={4} margin={10}>
-        {servicesCard.map((card) => (
-          <ServicesCard
-            key={card.id}
-            image={card.image}
-            heading={card.heading}
-            period={card.period}
-          />
-        ))}
-      </OwlCarousel>
-    </div>
+    <section className="services">
+      <div className="container">
+        <h2>Xidmətlərimiz</h2>
+        <OwlCarousel className="owl-theme" items={4} margin={10}>
+          {servicesCard.map((card) => (
+            <ServicesCard
+              key={card.id}
+              image={card.image}
+              heading={card.heading}
+              period={card.period}
+            />
+          ))}
+        </OwlCarousel>
+      </div>
+    </section>
   );
 };
 

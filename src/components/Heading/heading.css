@@ -20,13 +20,18 @@
 }
 
 .heading-left-textbox h1 {
-  font-size: 100%;
+  font-size: 56px;
+  font-weight: 700;
   margin-bottom: 30px;
 }
 
+.heading-left-textbox span {
+  color: var(--primary-color);
+}
+
 .heading-left-textbox p {
+  font-size: 18px;
   margin-bottom: 40px;
-  width: 90%;
   line-height: 32px;
   color: #616161;
 }

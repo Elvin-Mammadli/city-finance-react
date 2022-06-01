@@ -1,11 +1,81 @@
 .useful-info {
-  height: 503px;
-  padding: 50px 10%;
-  border: 1px solid red;
+  padding: 50px 0;
+  background-color: var(--section-color);
 }
 
-.useful-info > h2 {
-    font-size: 2.25rem;
-    line-height: 60px;
-    margin-bottom: 25px;
-  }
+.useful-info h2 {
+  font-size: 2.25rem;
+  line-height: 60px;
+  margin-bottom: 25px;
+}
+
+.useful-boxes {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.useful-left,
+.useful-right {
+  flex: 1;
+  padding: 32px;
+  background-color: var(--white);
+}
+
+.useful-left > .heading-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.useful-left td:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.useful-left table {
+  width: 100%;
+}
+
+.useful-left tr {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.useful-left th {
+  padding-bottom: 32px;
+}
+
+.useful-left td {
+  padding-bottom: 28px;
+}
+
+.useful-right {
+  padding: 32px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.select-box {
+  display: flex;
+  border-bottom: 1px solid #00A5B433;
+}
+
+.select-box input {
+  padding: 12px 0;
+  flex: 10;
+  border: none;
+  outline: none;
+}
+
+.select-box > select {
+  flex: 1;
+  border: none;
+  outline: none;
+}

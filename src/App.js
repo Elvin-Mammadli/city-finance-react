@@ -5,6 +5,7 @@ import Campaigns from './pages/CampaignsPage/Campaigns';
 import Calculations from './pages/CalculationPage/Calculations';
 import Partners from './pages/PartnersPage/Partners';
 import UsefulInfoPage from './pages/UsefulInfoPage/UsefulInfoPage';
+import Footer from './pages/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Calculations />
       <Partners />
       <UsefulInfoPage />
+      <Footer />
     </>
   );
 }
