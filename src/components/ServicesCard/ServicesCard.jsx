@@ -1,9 +1,38 @@
 import "./servicesCard.css";
 import Button from "../Button/Button";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+
+const boxVariant = {
+  visible: { opacity: 1, transition: { duration: 2 } },
+  hidden: { opacity: 0 },
+};
 
 const ServicesCard = ({ image, heading, period }) => {
+  const control = useAnimation();
+  const { inView, ref } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
   return (
-    <div className="services-card">
+    <motion.div
+      className="services-card"
+      whileHover={{
+        scale: 0.95,
+        transition: { duration: 0.4 },
+      }}
+      ref={ref}
+      variants={boxVariant}
+      initial="hidden"
+      animate={control}
+    >
       <div className="services-card-top">
         <img src={image} alt={`${image}`} />
       </div>
@@ -21,7 +50,7 @@ const ServicesCard = ({ image, heading, period }) => {
         </div>
         <Button text="Sifariş et" style={{ width: "100%" }} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

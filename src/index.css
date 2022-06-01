@@ -20,8 +20,9 @@ h2 {
 :root {
   /* variables */
   --primary-color: #00a5b4;
+  --hover-color: #2E91B0;
   --secondary-color: #cefbff;
-  --section-color: #F0FFFC;
+  --section-color: #f0fffc;
   --white: #ffffff;
   --grey-1: #bdbdbd;
   --grey-2: #616161;
@@ -31,4 +32,21 @@ h2 {
 
 div.container {
   padding: 0 10vw;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  cursor:default;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 }

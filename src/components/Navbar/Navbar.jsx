@@ -20,7 +20,7 @@ const Navbar = () => {
           <div className="navigations">
             <ul>
               {menus.map((menu) => (
-                <li key={menu.id}>
+                <li className="nav-link-ltr" key={menu.id}>
                   <a href={`#${menu.name}`}>{menu.name}</a>
                 </li>
               ))}

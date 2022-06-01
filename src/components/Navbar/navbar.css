@@ -20,6 +20,24 @@ nav {
 
 .navigations li {
   margin-right: 30px;
+  position: relative;
+}
+
+.navigations li::before {
+  transition: 300ms;
+  height: 1.6px;
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: -5px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
 }
 
 .navigations img {

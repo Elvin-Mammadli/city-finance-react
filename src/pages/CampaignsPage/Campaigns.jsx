@@ -1,5 +1,5 @@
 import "./campaigns.css";
-import AllButton from "../../assets/HamisiButton.svg";
+import arrow_right from "../../assets/arrow-right.svg";
 import GiftPic from "../../assets/gift.svg";
 import FlowerPic from "../../assets/flower.svg";
 import GoldPic from "../../assets/goldbar.svg";
@@ -29,9 +29,10 @@ const Campaigns = () => {
       <div className="campaigns-box container">
         <div className="heading-row">
           <h2>Kampaniyalar</h2>
-          <a href="#hamisi">
-            <img src={AllButton} alt="Hamisi" />
-          </a>
+          <div className="allbtn">
+            <a href="hamisi">Hamısı</a>
+            <img className="arrow_right" src={arrow_right} alt="arrow right" />
+          </div>
         </div>
 
         <div className="campaigns-cards">

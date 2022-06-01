@@ -6,7 +6,7 @@ import qala from "../../assets/qala.svg";
 import subaru from "../../assets/subaru.svg";
 import mazda from "../../assets/mazda.svg";
 import PartnerBox from "../../components/PartnerBox/PartnerBox";
-import AllButton from "../../assets/HamisiButton.svg";
+import arrow_right from "../../assets/arrow-right.svg";
 
 const partnerLogos = [
   { image: kia },
@@ -23,9 +23,10 @@ const Partners = () => {
       <div className="partners-box container">
         <div className="partners-heading">
           <h2>Onlar bizə etibar edir</h2>
-          <a href="#hamisi">
-            <img src={AllButton} alt="Hamisi" />
-          </a>
+          <div className="allbtn">
+            <a href="hamisi">Hamısı</a>
+            <img className="arrow_right" src={arrow_right} alt="arrow right" />
+          </div>
         </div>
 
         <div className="partners-logos">

@@ -59,12 +59,30 @@ const servicesCard = [
   },
 ];
 
+const options = {
+  margin: 10,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    700: {
+      items: 2,
+    },
+    1100: {
+      items: 3,
+    },
+    1400: {
+      items: 4,
+    },
+  },
+};
+
 const Services = () => {
   return (
     <section className="services">
       <div className="container">
         <h2>Xidmətlərimiz</h2>
-        <OwlCarousel className="owl-theme" items={4} margin={10}>
+        <OwlCarousel className="owl-theme" {...options}>
           {servicesCard.map((card) => (
             <ServicesCard
               key={card.id}
