@@ -1,12 +1,6 @@
 .values-card {
-  width: 25.5%;
+  flex: 1;
 }
-
-/* .values-card:hover {
-  transform: scale(1.1);
-  transition: all 0.4s ease;
-  cursor: pointer;
-} */
 
 .values-card > img {
   margin: 24px 0 16px 0;

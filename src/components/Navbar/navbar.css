@@ -74,22 +74,17 @@ nav {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 7;
+    z-index: 6;
   }
 
   /* burger menu */
 
-  /* .hamburger {
-    height: auto;
-    width: auto;
-  } */
-
-  .hamburger .line {
-    width: 50px;
+  .line {
+    width: 30px;
     height: 5px;
     background-color: rgb(39, 100, 107);
     display: block;
-    margin: 8px auto;
+    margin: 4px auto;
     z-index: 8;
     position: relative;
     transition: all 0.3s ease-in-out;
@@ -139,19 +134,21 @@ nav {
     display: flex;
     flex-direction: column;
     position: fixed;
-    right: 0;
+    right: -500px;
     top: 0;
     background-color: #93f2fb;
     justify-content: flex-start;
   }
   .hamburger-active {
     width: 50vw;
+    right: 0;
     transition: all 0.4s ease;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

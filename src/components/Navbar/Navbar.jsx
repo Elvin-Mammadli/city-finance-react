@@ -14,13 +14,18 @@ const menus = [
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
 
+  const toggleBurger = e => {
+    // e.stopPropogation();
+    setIsActive(prev => !prev);
+  }
+
   return (
     <nav>
       <div className="navigations-box container">
         <a href="#home">
           <img src={Logo} alt="Logo" />
         </a>
-        <div className={isActive && "overlay"}>
+        <div className={isActive ? "overlay" : null} onClick={toggleBurger}>
           <div className={isActive ? "navigations hamburger-active" : "navigations"}>
             <ul>
               {menus.map((menu) => (
@@ -37,10 +42,10 @@ const Navbar = () => {
         </div>
         {
           window.innerWidth <= 992 && (
-            <div className={isActive ? "hamburger is-active" : "hamburger"} onClick={() => setIsActive(prev => !prev)}>
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
+            <div className={isActive ? "hamburger is-active" : "hamburger"} onClick={toggleBurger}>
+              <div className="line"></div>
+              <div className="line"></div>
+              <div className="line"></div>
             </div>
           )
         }
